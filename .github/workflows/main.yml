@@ -1,1 +1,19 @@
+name: testing for infosys
+on:
+    push:
+        branhces:
+        - main
+
+jobs:
+    my-firstapp:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: checkout code
+          uses: actions/checkout@v2
+        - name: print mesge
+          run: echo "welcome"
+
+    
+
 
